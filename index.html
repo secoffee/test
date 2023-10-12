@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-style Web Page</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Apply Apple-like styling */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul.sub-menu {
+            background-color: #000;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            flex-direction: column;
+            width: 120px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            left: 0;
+            top: 100%;
+        }
+
+        nav ul.sub-menu li {
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul li:hover ul {
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0070c9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SE COFFEE</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">브랜드</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">CEO 인사말</a></li>
+                        <li><a href="#">에스이커피 소개</a></li>
+                        <li><a href="#">커피 이야기</a></li>
+                        <li><a href="#">교육 이야기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">소식</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">창업안내</a></li>
+                <li><a href="#">고객의소리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to Our Website</h2>
+        <p>This is a simple Apple-style web page example. <a href="#">Learn more</a></p>
+    </section>
+</body>
+</html>
